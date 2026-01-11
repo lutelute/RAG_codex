@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Python virtual environments
+.venv/
+venv/
+
+# Local models and generated artifacts
+models/*.gguf
+full_rag/models/*.gguf
+logs/
+results/
+
+# Editor settings
+.vscode/

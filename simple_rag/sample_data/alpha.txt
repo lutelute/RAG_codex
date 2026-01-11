@@ -1,0 +1,3 @@
+RAG stands for Retrieval-Augmented Generation. It combines search and generation.
+A common pipeline is: load data, split into chunks, embed, store vectors, retrieve, and generate.
+Chunk size and overlap affect recall and latency.

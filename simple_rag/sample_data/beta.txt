@@ -1,0 +1,3 @@
+Vector search compares embeddings to find semantically similar text.
+BM25 or TF-IDF can work as a simple baseline without embeddings.
+Reranking can improve precision by reordering retrieved passages.

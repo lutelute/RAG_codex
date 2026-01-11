@@ -1,0 +1,3 @@
+Local LLMs can be served with llama.cpp or llama-cpp-python.
+Quantized models are smaller and run on CPU.
+Good prompts include a concise question and relevant context.

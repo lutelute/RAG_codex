@@ -1,0 +1,67 @@
+[
+  {
+    "source": "doc1.md",
+    "chunk": 0,
+    "text": "# RAG Overview Retrieval-Augmented Generation (RAG) combines search and generation to ground LLM outputs. A typical flow: ingest data, split into chunks, embed, store vectors, retrieve top-k, and generate. Choosing chunk size and overlap trades recall for speed. # Prompting A good prompt includes the user question and the retrieved context. It should instruct the model to only use the context and to admit when missing."
+  },
+  {
+    "source": "doc2.md",
+    "chunk": 0,
+    "text": "# Local LLMs Local models can be served with llama.cpp or llama-cpp-python. Quantized GGUF models run on CPU and are practical for demos. Use smaller models for speed and predictable latency."
+  },
+  {
+    "source": "doc3.md",
+    "chunk": 0,
+    "text": "# Retrieval Tips Use embeddings (e.g., sentence-transformers) for semantic search. A reranker improves precision for ambiguous questions. Store metadata like source filename and chunk index for traceability."
+  },
+  {
+    "source": "japanese.md",
+    "chunk": 0,
+    "text": "# \u65e5\u672c\u8a9e\u30b5\u30f3\u30d7\u30eb \u3053\u306e\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306f\u65e5\u672c\u8a9e\u306e\u8cea\u554f\u306b\u3082\u5bfe\u5fdc\u3057\u307e\u3059\u3002 \u691c\u7d22\u3067\u95a2\u9023\u6587\u8108\u3092\u53d6\u308a\u51fa\u3057\u3001LLM\u304c\u65e5\u672c\u8a9e\u3067\u56de\u7b54\u3057\u307e\u3059\u3002"
+  },
+  {
+    "source": "pandapower.md",
+    "chunk": 0,
+    "text": "# Pandapower Integration This project can run power-flow analysis via pandapower and store results. Supported cases: case9, case14, case30, case118. Inputs include load_scale and gen_scale. Results are saved to the results folder and indexed for RAG."
+  },
+  {
+    "source": "result_20260110T154037Z.md",
+    "chunk": 0,
+    "text": "# Pandapower Result - Timestamp (UTC): 20260110T154037Z - Question: Run a case14 power flow with load_scale 1.2 and summarize. - Case: case14 - load_scale: 1.0 - gen_scale: 1.0 - Converged: True - Total load (MW): 259.0 - Total generation (MW): 272.3933 - Losses (MW): 13.3933 - Vmin/Vmax (pu): 1.01 / 1.09 - Max line loading (%): 1.5076 ## Top Loaded Lines - line 0: 1.51% - line 1: 0.72% - line 2: 0.71% - line 6: 0.63% - line 3: 0.54% ## Parameters ```json { \"case\": \"case14\", \"load_scale\": 1.0, \"gen_scale\": 1.0, \"note\": \"fallback\" } ```"
+  },
+  {
+    "source": "result_20260110T154426Z.md",
+    "chunk": 0,
+    "text": "# Pandapower Result - Timestamp (UTC): 20260110T154426Z - Question: Run a case14 power flow with load_scale 1.2 and summarize. - Case: case14 - load_scale: 1.0 - gen_scale: 1.0 - Converged: True - Total load (MW): 259.0 - Total generation (MW): 272.3933 - Losses (MW): 13.3933 - Vmin/Vmax (pu): 1.01 / 1.09 - Max line loading (%): 1.5076 ## Top Loaded Lines - line 0: 1.51% - line 1: 0.72% - line 2: 0.71% - line 6: 0.63% - line 3: 0.54% ## Parameters ```json { \"case\": \"case14\", \"load_scale\": 1.0, \"gen_scale\": 1.0, \"note\": \"fallback\" } ```"
+  },
+  {
+    "source": "result_20260110T154521Z.md",
+    "chunk": 0,
+    "text": "# Pandapower Result - Timestamp (UTC): 20260110T154521Z - Question: Run a case14 power flow with load_scale 1.2 and summarize. - Case: case14 - load_scale: 1.0 - gen_scale: 1.0 - Converged: True - Total load (MW): 259.0 - Total generation (MW): 272.3933 - Losses (MW): 13.3933 - Vmin/Vmax (pu): 1.01 / 1.09 - Max line loading (%): 1.5076 ## Top Loaded Lines - line 0: 1.51% - line 1: 0.72% - line 2: 0.71% - line 6: 0.63% - line 3: 0.54% ## Parameters ```json { \"case\": \"case14\", \"load_scale\": 1.0, \"gen_scale\": 1.0, \"note\": \"fallback\" } ```"
+  },
+  {
+    "source": "result_20260110T154603Z.md",
+    "chunk": 0,
+    "text": "# Pandapower Result - Timestamp (UTC): 20260110T154603Z - Question: Run a case14 power flow with load_scale 1.2 and summarize. - Case: case14 - load_scale: 1.0 - gen_scale: 1.0 - Converged: True - Total load (MW): 259.0 - Total generation (MW): 272.3933 - Losses (MW): 13.3933 - Vmin/Vmax (pu): 1.01 / 1.09 - Max line loading (%): 1.5076 ## Top Loaded Lines - line 0: 1.51% - line 1: 0.72% - line 2: 0.71% - line 6: 0.63% - line 3: 0.54% ## Parameters ```json { \"case\": \"case14\", \"load_scale\": 1.0, \"gen_scale\": 1.0, \"note\": \"fallback\" } ```"
+  },
+  {
+    "source": "result_20260110T154711Z.md",
+    "chunk": 0,
+    "text": "# Pandapower Result - Timestamp (UTC): 20260110T154711Z - Question: Run a case14 power flow with load_scale 1.2 and summarize. - Case: case14 - load_scale: 1.0 - gen_scale: 1.0 - Converged: True - Total load (MW): 259.0 - Total generation (MW): 272.3933 - Losses (MW): 13.3933 - Vmin/Vmax (pu): 1.01 / 1.09 - Max line loading (%): 1.5076 ## Top Loaded Lines - line 0: 1.51% - line 1: 0.72% - line 2: 0.71% - line 6: 0.63% - line 3: 0.54% ## Parameters ```json { \"case\": \"case14\", \"load_scale\": 1.0, \"gen_scale\": 1.0, \"note\": \"fallback\" } ```"
+  },
+  {
+    "source": "result_20260110T154755Z.md",
+    "chunk": 0,
+    "text": "# Pandapower Result - Timestamp (UTC): 20260110T154755Z - Question: Run a case14 power flow with load_scale 1.2 and summarize. - Case: case14 - load_scale: 1.0 - gen_scale: 1.0 - Converged: True - Total load (MW): 259.0 - Total generation (MW): 272.3933 - Losses (MW): 13.3933 - Vmin/Vmax (pu): 1.01 / 1.09 - Max line loading (%): 1.5076 ## Top Loaded Lines - line 0: 1.51% - line 1: 0.72% - line 2: 0.71% - line 6: 0.63% - line 3: 0.54% ## Parameters ```json { \"case\": \"case14\", \"load_scale\": 1.0, \"gen_scale\": 1.0, \"note\": \"fallback\" } ```"
+  },
+  {
+    "source": "result_20260110T154907Z.md",
+    "chunk": 0,
+    "text": "# Pandapower Result - Timestamp (UTC): 20260110T154907Z - Question: Run a case14 power flow with load_scale 1.2 and summarize. - Case: case14 - load_scale: 1.2 - gen_scale: 1.0 - Converged: True - Total load (MW): 310.8 - Total generation (MW): 331.1184 - Losses (MW): 20.3184 - Vmin/Vmax (pu): 1.01 / 1.09 - Max line loading (%): 1.9106 ## Top Loaded Lines - line 0: 1.91% - line 1: 0.89% - line 2: 0.86% - line 6: 0.76% - line 3: 0.65% ## Parameters ```json { \"case\": \"case14\", \"load_scale\": 1.2, \"gen_scale\": 1.0, \"note\": \"fallback\" } ```"
+  },
+  {
+    "source": "result_20260110T155455Z.md",
+    "chunk": 0,
+    "text": "# Pandapower Result - Timestamp (UTC): 20260110T155455Z - Question: Run a case14 power flow with load_scale 1.2 and summarize. - Case: case14 - load_scale: 1.2 - gen_scale: 1.0 - Converged: True - Total load (MW): 310.8 - Total generation (MW): 331.1184 - Losses (MW): 20.3184 - Vmin/Vmax (pu): 1.01 / 1.09 - Max line loading (%): 1.9106 ## Top Loaded Lines - line 0: 1.91% - line 1: 0.89% - line 2: 0.86% - line 6: 0.76% - line 3: 0.65% ## Parameters ```json { \"case\": \"case14\", \"load_scale\": 1.2, \"gen_scale\": 1.0, \"note\": \"fallback\" } ```"
+  }
+]
